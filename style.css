@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    background-color: rgb(90, 90, 90);
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.logo >h3{
+    margin-left: 20px;
+}
+h3{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.nav{
+   
+    gap: 60px;
+    margin-left: 10px;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+}
+.page1 >img{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -99;
+}
+.page1 >h1{
+    color: white;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    right: 150px;
+}
+.page2{
+    height: 120vh;
+    width: 100%;
+    color: rgb(246, 246, 246);
+    background-color:RGB(121, 118, 111);
+    overflow: none;
+}
+.img-thumbnail{
+    height: 40%;
+    width: 40%;
+    position: relative;
+    left: 10vh;
+}
+#image2{
+    height: 450px;
+    width: 450px;
+    position: relative;
+    left: 80vh;
+    top: 60vh;
+}
+#row{
+    position: relative;
+    bottom: 40%;
+    left: 100vh;
+}
+#img3{
+    height: 400px;
+    width: 450px;
+}
+.page3{
+  background-color: RGB(121, 118, 111);
+  
+  height: 100vh;
+  width: 100%;
+}
+body {
+    
+    display: grid;
+
+  }
+.list {
+    display: flex;
+    gap: 0.25rem;
+    transform-style: preserve-3d;
+    list-style-type: none;
+   position: relative;
+   left: 20vh;
+ 
+   height: 300px;
+   width: 120px;
+  
+    &:hover :not(:hover) {
+      margin: 0 -20px;
+      transform: perspective(500px) rotateY(45deg) scale(0.95);
+    }
+  
+    &:hover :not(:hover)::after {
+      opacity: 0.4;
+    }
+  }
+  
+  .item {
+    position: relative;
+    width: 200px;
+    aspect-ratio: 3/4;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    transition: margin 0.5s, transform 0.5s;
+  
+    &:nth-of-type(1) { background-image: url(toy3.jpg); }
+    &:nth-of-type(2) { background-image: url(toy8.jpg); }
+    &:nth-of-type(3) { background-image: url(toy6.jpg); }
+    &:nth-of-type(4) { background-image: url(toyfight2.jpg); }
+    &:nth-of-type(5) { background-image: url(toyfight-removebg-preview.png); }
+  
+    &:hover ~ .item {
+      transform: perspective(500px) rotateY(-45deg) scale(0.95);
+    }
+  
+    &:hover {
+      transform: perspective(500px) rotateY(0) scale(1.2);
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      aspect-ratio: inherit;
+      border-radius: inherit;
+      background-color: black;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  }
+  
+#squad{
+  color: white;
+  font-size: 2rem;
+}
+#center{
+  color: white;
+  font-family: sans-serif;
+}
+.footer{
+  height: 50vh;
+  width: 100%;
+  background-color:RGB(121, 118, 111);
+  
+}
+#img5{
+  object-fit: cover;
+  height: 50vh;
+  position: relative;
+  width: 100vh;
+  left:30%;
+}
